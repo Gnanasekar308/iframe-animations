@@ -1,0 +1,125 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .container{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border: solid black 2px;
+    overflow: hidden;
+}
+.img1{
+    position: absolute;
+    background: transparent;
+    height: 100%;
+    left: -521px;
+    transition: 6s;
+}
+.img1.show{
+    left: -483px;
+}
+.img1.show2{
+    left: -593px;
+}
+.img2{
+    position: absolute;
+    background: transparent;
+    width: 654px;
+    bottom: -7px;
+    right: -168px;
+    transition: 5s;
+}
+.img2.move{
+right: -95px;
+}
+.img2.move2{
+    right: -157px;
+}
+.text-1{
+    position: absolute;
+    z-index: 9;
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: larger;
+    color: white;
+    font-family:  Tahoma;
+    opacity: 0;
+    transition: 1s;
+}
+.text-1.show{
+    opacity: 1;
+}
+.text-1.hide{
+    opacity: 0;
+}
+.text-2{
+    z-index: 10;
+    position: absolute;
+    font-family:  Tahoma;
+    top: 82px;
+    left: -141px;
+    transition: 2s;
+    color: yellow;
+}
+.text-2.show{
+     left: 100px;
+}
+.text-2.hide{
+    left: -141px;
+}
+.text-3{
+    z-index: 10;
+    position: absolute;
+    top: 142px;
+    background-color: rgb(75,95,116);
+    right: -207px;
+    color: white;
+    transition: 2s;
+    font-size: xx-large;
+}
+.text-3.show{
+    right: 37px;
+}
+.text-3.hide{
+    right: -207px;
+}
+.text-4{
+    z-index: 10;
+    position: absolute;
+    font-family:  Tahoma;
+    top: 200px;
+    left: -141px;
+    transition: 2s;
+    color: yellow;
+}
+.text-4.show{
+     left: 100px;
+}
+.text-4.hide{
+    left:-141px ;
+}
+.btn{
+    position: absolute;
+    z-index: 10;
+    height: 45px;
+    width: 186px;
+    color: gray;
+    background-color: yellow;
+    bottom: -65px;
+    left: 60px;
+    border-radius: 7%;
+    font-size: 25px;
+    border: none;
+    transition: 0.5s;
+    font-family:  Tahoma;
+    padding: 2% 5% 3% 5%;
+
+}
+.btn.show{
+bottom: 40px;
+}
+.btn.hide{
+    bottom: -65px;
+}

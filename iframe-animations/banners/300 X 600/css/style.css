@@ -1,0 +1,370 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    border: solid 2px black;
+    overflow: hidden;
+}
+#road-img{
+    position: absolute;
+    background-image: url(../images/imgRoad_300x600.jpg);
+    left: 0px;
+    width: 300px;
+    height: 3300px;
+    top: -2405px;
+    background-position-x: 3px;
+}
+#img1{
+    position: absolute;
+    width: 300px;
+    height: 1500px;
+}
+#car {
+    position: absolute;
+    bottom: 26px;
+    left: 28px;
+    transform: translate(22px, 0px);
+}
+#frame{
+    position: absolute;
+    left: 7px;
+    top: 182px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+     align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+ transform: translate(138px, 201px) scale(0);
+}
+#icon1 {
+    position: absolute;
+    left: -5px;
+    top: -6px;
+}
+#icon2 {
+    position: absolute;
+    left: -238px;
+    top: -6px;
+}
+#icon3 {
+    position: absolute;
+    left: -125px;
+    top: 2px;
+}
+#icon4 {
+    position: absolute;
+    left: -360px;
+    top: 3px;
+}
+#logo1 {
+    position: absolute;
+    left: -609px;
+    top: 2px;
+    opacity: 0;
+}
+#tracker-1 {
+    position: absolute;
+    top: 66px;
+    left: 7px;
+    transform: scale(0);
+}
+#logo2 {
+    position: absolute;
+    left: -489px;
+    top: -6px;
+    opacity: 0;
+}
+#tracker-2 {
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    transform: scale(0);
+}
+#line {
+    position: absolute;
+    top: 257px;
+    width: 3px;
+    height: 154px;
+    left: 169px;
+    transform: rotate(330deg) scale(0);
+    transform-origin: right bottom;
+}
+#line2 {
+    position: absolute;
+    left: 140px;
+    left: 149px;
+    top: 45px;
+    height: 160px;
+    width: 142px;
+    display: flex;
+    border: 1px solid #fff;
+    overflow: hidden;
+    transform: translate(-1px, 223px)  scale(0);
+}
+#dot, #dot-02{
+    position: absolute;
+    font-size: 23px;
+    top: 0;
+    right: 0;
+    color: white;
+    opacity: 0;
+}
+#dot{
+
+    transform:  rotate(-109deg) translate(-302px,-212px);
+    
+}
+#dot-02{
+    transform: rotate(276deg) translate(-306px,21px);
+    
+}
+/* #frame2 {
+    position: absolute;
+    top: 214px;
+    width: 4px;
+    height: 204px;
+    left: 205px;
+    transform: rotate(14deg) scale(0) ;
+    transform-origin: left bottom;
+} */
+#frame2{
+    position: absolute;
+    height: 142px;
+    width: 119px;
+    border: solid 1px white;
+    top: 56px;
+    right: 9px;
+    background-color: black;
+    opacity: 0.6;
+    overflow: hidden;
+    transform: scale(0);
+}
+#toptext{
+    position: absolute;
+}
+#street{
+    position: absolute;
+    bottom: -3px;
+    left: -13px;
+}
+#streetline{
+    position: absolute;
+    bottom: -192px;
+    left: 56px;
+    /* transform: rotate(330deg); */
+    animation:road-line 0.5s infinite linear ; 
+}
+ @keyframes road-line{
+    0%{bottom: -180px;}
+    100%{bottom: -192px;}
+}
+#deer{
+    position: absolute;
+    top: 42px;
+    left: 20px;
+    transform: translate(0px,0px) scale(0.2);
+    border: solid 1px white;
+    width: 40px;
+    height: 40px;
+    
+}
+#man{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    height: 64px;
+    width: 32px;
+    transform: translate(0px,0px) scale(0.2);
+   
+}
+#border-1{
+    position: absolute;
+    width: 27px;
+    height: 30px;
+    border: solid 1px white;
+    top: 40px;
+    right: 40px;
+    transform: scale(0.2) translate(0px , 0px);
+   
+}
+#border-2{
+    
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    border: solid 1px white;
+    top: 41px;
+    right: 45px;
+    transform: scale(0.2) translate(0px, 0px);
+   
+}
+#sympols{
+    transform: scale(0);
+}
+#route{
+    transform: scale(0);
+}
+#text-1{
+    position: absolute;
+    width: 265px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+#text{
+    position: relative;
+    top: 70px;
+    left: 7px;
+    width: 253px;
+    height: 54px;
+    overflow: hidden;
+}
+#corner{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 80px;
+    height: 50px;
+    overflow: hidden;
+}
+#corner-text{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -14px;
+    left: -206px;
+    opacity: 0;
+    z-index: 2;
+}
+#sprite-1{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -120px;
+    left: -324px;
+    opacity: 0;
+}
+#sprite-2{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -170px;
+    left: -625px;
+    opacity: 0;
+}
+#sprite-3{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -217px;
+    left: -25px;
+    opacity: 0;
+}
+#sprite-4{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -268px;
+    left: -324px;
+    opacity: 0;
+}
+#sprite-5{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -319px;
+    left: -626px;
+    opacity: 0;
+}
+#sprite-6{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -368px;
+    left: -24px;
+    opacity: 0;
+}
+#bgimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-106%);
+    width: 266px;
+    height: 566px;
+    z-index: 1;
+}
+#final{
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    width: 247px;
+    height: 460px;
+    overflow: hidden;
+}
+#end{
+    position: relative;
+    top: 0px;
+    left: 1px;
+    height: 60px;
+    width: 243px;
+    overflow: hidden;
+}
+#sprite-7{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -121px;
+    left: -323px;
+    opacity: 0;
+}
+#sprite-8{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -178px;
+    left: -623px;
+    opacity: 0;
+}
+#sprite-9{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -231px;
+    left: -23px;
+    opacity: 0;
+}
+#sprite-10{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -285px;
+    left: -322px;
+    opacity: 0;
+}
+#conclusion{
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 100px;
+    bottom: -86px;
+    left: 12px;
+}
+#sprite-11{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -420px;
+    left: -628px;
+    opacity: 0;
+}

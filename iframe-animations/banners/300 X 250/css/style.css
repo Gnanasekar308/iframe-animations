@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border: solid 2px black;
+    opacity: 0;
+}
+#bgimg{
+    position: absolute;
+    width: 455px;
+    height: 250px;
+    transform: translateX(0px);
+}
+#box1{
+    position: absolute;
+    height: 396px;
+    width: 266px;
+    border: solid 2px white;
+    transform: rotate(-129deg);
+    left: -147px;
+    top: -364px;
+    background-color: rgb(4,65,126);
+    opacity: 0.8;
+}
+#box2{
+    position: absolute;
+    height: 396px;
+    width: 266px;
+    border: solid 2px white;
+    transform: rotate(-129deg);
+    right: -147px;
+    bottom: -365px;
+    background-color: rgb(4,65,126);
+    opacity: 0.8;
+}
+#text1{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 16px;
+    transform: translateX(-112px);
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+}
+#text1.show{
+    animation: move  0.7s;
+    transform: translateX(19px);
+    opacity: 1;
+}
+@keyframes move{
+    0%{transform: translateX(-112px);}
+    95%{transform: translateX(25px);}
+    100%{transform: translateX(18px);}
+}
+#text2{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 40px;
+    font-size: 22px;
+    transform: translateX(-93px);
+    color: white;
+    opacity: 0;
+}
+
+#text2.show{
+    animation: move  0.7s;
+    transform: translateX(18px);
+    opacity: 1;
+}
+@keyframes move{
+    0%{transform: translateX(-93px);}
+    95%{transform: translateX(25px);}
+    100%{transform: translateX(18px);}
+}
+#text3{
+    position: absolute;
+    top: 66px;
+    font-size: 13px;
+    transform: translateX(18px);
+    color:lightgray;
+    opacity: 0;
+}
+#text4{
+    position: absolute; 
+    top: 79px;
+    font-size: 13px;
+    transform: translateX(19px);
+    color:lightgray;
+    opacity: 0;
+}
+#btn{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    width: 20px;
+    opacity: 0;
+}
+#btn.width{
+    animation: show 0.8s;
+    width: 131px;
+    opacity: 1;
+
+}
+@keyframes show{
+    0%{width: 20px;}
+    /* 50%{width: 80px;} */
+    100%{width: 131px;}
+}
+#btntext{
+    position: absolute;
+    font-size: 2px;
+    bottom: 25px;
+    right: 15px;
+    opacity: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#logo{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: translateY(-20px);
+}
+#link{
+    position: absolute;
+    color:lightgray;
+    bottom: 0;
+    opacity: 0;
+    right: 10px;
+    transform: translateY(20px);
+}

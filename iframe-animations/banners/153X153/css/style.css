@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 153px;
+    height: 153px;
+    border: solid 2px black;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#image{
+    position: relative;
+    width: 612px;
+    height: 153px;
+    transform: translateX(0);
+    animation-name: roll;
+    animation-timing-function: steps(16);
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+@keyframes roll{
+    100%{transform: translateX(-2448px);}
+}
+#img-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#img-2{
+    position: absolute;
+    top: -153px;
+    left: 612px;
+}
+#img-3{
+    position: absolute;
+    top: -306px;
+    left: 1224px;
+}
+#img-4{
+    position: absolute;
+    top: -459px;
+    left: 1836px;
+}

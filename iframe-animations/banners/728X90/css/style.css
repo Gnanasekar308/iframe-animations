@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    position: relative;
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    border: solid 2px black;
+    /* top: 200px;
+    left: 325px; */
+}
+#img1{
+    position: absolute;
+}
+#img2{
+    position: absolute;
+    right: 0;
+}
+#img3{
+    position: absolute;
+    right: 0px;
+}
+#box1{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    height: 90px;
+    width: 270px;
+    background-color: red;
+}
+#box2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90px;
+    width: 290px;
+    background-color: red;
+}
+#firstword{
+    position: absolute;
+    top: 13px;
+    right: 0px;
+    font-family: 'Roboto', sans-serif;
+    transform: translateX(51px);
+}
+#secword{
+    position: absolute;
+    top: 28px;
+    right: 0;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    transform: translateX(247px);
+    color: red;
+    opacity: 0;
+}
+#thirdword{
+    position: absolute;
+    bottom: 12px;;
+    opacity: 0;
+    right:120px;
+    transform:translateY(22px) ;
+}
+#logo{
+    position: absolute;
+    top: 0;
+    left: 277px;
+    transform: translateY(-54px);
+}
+#icon1{
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    transform: scale(0);
+}
+#icon2{
+    position: absolute;
+    bottom: 14px;
+    left: 177px;
+    transform: scale(0);
+}
+#icon3{
+    position: absolute;
+    top: 25px;
+    left: 207px;
+    transform: scale(0);
+}
+#icon4{
+    position: absolute;
+    top: 0;
+    left: 233px;
+    transform: scale(0);
+}
+#btn{
+    position: absolute;
+    top: 35px;
+    right: 7px;
+    width: 107px;
+    height: 23px;
+    border-style: none;
+    color: yellow;
+    border-radius: 8px;
+    background-color: red;
+    transform: scale(1.1);
+    opacity: 0;
+}
